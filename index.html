@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Function Javascript</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <section class="cover">
+            <h1>💥รวม Project เกี่ยวกับการใช้ Javascript💥</h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Website นี้เป็นส่วนหนึ่งของการฝึกฝนการใช้ Javascript โดยจะแบ่งออกเป็นหัวข้อแต่ละหัวข้อ เพื่อที่ในอนาคตสามารถกลับเข้ามาดูคำสั่งต่างๆ และรูปแบบการใช้งานได้</p>
+            <p><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;สามารถเลือกหัวข้อที่ต้องการดูได้ ดังนี้</p>
+            <div class="title-box">
+                <ul class="title-group">
+                    <li><a href="#coupon">1. Function (Click to Copy)</a></li>
+                    <li><a href="#dark-mode">2. Function (Clock Light/Dark Mode)</a></li>
+                    <li><a href="#charactor">3. Function (Input Charactor Count)</a></li>
+                    <li><a href="#increment">4. Function (Increment Counter)</a></li>
+                    <li><a href="#modal">5. Function (Modal Popup)</a></li>
+                    <li><a href="#login">6. Function (Password Visibility)</a></li>
+                    <li><a href="#imgPopup">7. Function (Image Gallery Popup)</a></li>
+                    <li><a href="#searchAnimation">8. Function (Animation Search)</a></li>
+                    <li><a href="#searchFilter">9. Function (Search Filter)</a></li>
+                    <li><a href="#watchCount">10. Function (Watch Counting)</a></li>
+                    <li><a href="#TempCal">11. Function (Temperature Calculator)</a></li>
+                    <li><a href="#bmiCal">12. Function (BMI Calculator)</a></li>
+                </ul>
+            </div>
+            <audio controls autoplay loop>
+                <source src="/sounds/รถไฟบนฟ้า D GERRARD x TorSaksit (Piano i Live).mp3">
+            </audio>
+        </section>
+        <hr>
+        <section class="content" id="coupon">
+            <h2>1. Function (Click to Copy)</h2>
+            <p>เป็นการจำลองเมื่อ กรณีต้องการ Copy โค้ดส่วนลดบนหน้าเว็บ ทำได้โดยการคลิก บนที่กำหนดเพียงปุ่มเดียว</p>
+            <div class="bg" id="slide1">
+                <div class="bg1-con">
+                    <h3>คลิกรับคูปองส่วนลด 50%</h3>
+                    <input type="text" class="coupon" value="FLASHSALE2024" readonly>
+                    <button class="btn-bg1">คัดลอก</button>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="dark-mode">
+            <h2>2. Function (Clock Light/Dark Mode)</h2>
+            <p>เป็นการจำลองของหน้า Website ที่สามารถเปลี่ยน พื้นหลังของเว็บให้เป็น Mode กลางวันหรือกลางคืนได้</p>
+            <div class="bg mode" id="slide1">
+                <div class="bg2-con">
+                    <div class="time">เวลาปัจจุปัน</div>
+                </div>
+                <button class="toggle">โหมดกลางคืน</button>
+            </div>
+        </section>
+        <section class="content" id="charactor">
+            <h2>3. Function (Input Charactor Count)</h2>
+            <p>สามารถนับจำนวนตัวอักษร ที่ป้อนเข้าไปในช่อง Input ซึ่งจะรู้ว่าเรากรอกไปแล้วกี่ตัวอักษร</p>
+            <div class="bg" id="slide1">
+                <div class="bg3-con">
+                    <h1>นับจำนวนตัวอักษร</h1>
+                    <span class="count">0</span>
+                    <input id="inputCount" type="text" placeholder="ป้อนข้อความของคุณ">
+                </div>
+            </div>
+        </section>
+        <section class="content" id="increment">
+            <h2>4. Function (Increment Counter)</h2>
+            <p>จำลองหน้า Website ที่มีการโชว์ค่า ยอดผู้ติดตาม เพื่อแสดงความหน้าเชื่อถือของ Website นั้นๆ</p>
+            <div class="bg follows" id="slide1">
+                <div class="counter-container">
+                    <i class="fa-brands fa-square-facebook fa-3x"></i>
+                    <div class="counter" data-target="70000">0</div> 
+                    <span>Facebook Fans</span>
+                </div>
+                <div class="counter-container">
+                    <i class="fa-brands fa-youtube fa-3x"></i>
+                    <div class="counter" data-target="60000">0</div>
+                    <span>Youtube Subscribers</span>
+                </div>
+                <div class="counter-container">
+                    <i class="fa-brands fa-square-instagram fa-3x"></i>
+                    <div class="counter" data-target="10000">0</div>
+                    <span>Instragram Followers</span>
+                </div>
+                <div class="btn4-group">
+                    <button class="btn4" id="btn4-start">เริ่มต้น (Start)</button>
+                    <button class="btn4" id="btn4-reset">รีเซ็ท</button>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="modal">
+            <h2>5. Function (Modal Popup)</h2>
+            <p>แสดงข้อมูลเพิ่มเติม หลังจากผู้ใช้งาน คลิกปุ่ม จะปรากฏหน้าต่างขึ้น เพื่ออ่านรายละเอียดเพิ่มเติมโดยยังอยู่ที่หน้าเว็บเดิม</p>
+            <div class="bg bgmodal" id="slide1">
+                <button class="open-btn">แสดงรายละเอียด</button>
+                <div class="modal-container">
+                    <div class="modal">
+                        <h1>ข้อมูลสินค้า</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cum possimus non nemo dolor ullam?</p>
+                        <button class="close-btn">ปิด</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="login">
+            <h2>6. Function (Password Visibility)</h2>
+            <p>จำลองหน้าต่าง Login ที่สามารถเข้าดูรหัสผ่านที่ตัวเองกรอกมาได้ เพื่อ recheck ว่าถูกต้องหรือไม่</p>
+            <div class="bg" id="slide1">
+                <h1>Please Login</h1>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email">
+                </div>
+                <div class="form-control">
+                    <label for="password">password</label>
+                    <input type="password" id="password">
+                    <i class="fa-solid fa-eye" id="eye"></i>
+                </div>
+                <div class="form-control">
+                    <button class="btn6">Login</button>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="imgPopup">
+            <h2>7. Function (Image Gallery Popup)</h2>
+            <p>เมื่อต้องการดูรูปภาพ เพียงคลิกที่รูปต้องการก็สามารถเข้าชมแบบภาพใหญ่ที่มีความละเอียดได้ โดยไม่ต้องออกจากหน้า Website </p>
+            <div class="bg bgmodal" id="slide1">
+                <div class="gellery">
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/18118946/pexels-photo-18118946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </div>
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/16920861/pexels-photo-16920861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </div>
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    </div>
+                </div>
+                <div class="modalImg">
+                    <img src="" alt="" class="full-image">
+                </div>
+            </div>
+        </section>
+        <section class="content" id="searchAnimation">
+            <h2>8. Function (Animation Search)</h2>
+            <p>แสดงปุ่ม Search แบบมี Animation นิยมนำมาใช้ในการแสดงผลบน โทรศัพท์เพื่อเพิ่มลูกเล่นของ Website </p>
+            <div class="bg" id="slide1">
+                <div class="search">
+                    <input type="text" placeholder="ค้นหาข้อมูล..." class="input">
+                    <button class="btn8">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="searchFilter">
+            <h2>9. Function (Search Filter)</h2>
+            <p>จำลองการค้นหาข้อมูล โดยใช้API อ้างอิง จาก https://restcountries.com/ ค้นหาโดยพิมข้อมูลที่ต้องการลงไป หน้าต่างจะแสดงข้อมูลที่อยากได้ส่วนข้อมูลที่ไม่พบ จะถูกซ่อนไว้</p>
+            <div class="bg" id="slide1">
+                <div class="bg9-con">
+                    <header class="header">
+                        <h4 class="title">Search Filter | Country API</h4>
+                        <small class="subtitle">ค้นหาข้อมูลจำนวนประชากรแต่ละประเทศ</small>
+                        <input type="text" id="filter" placeholder="ป้อนชื่อประเทศที่จะค้นหา...">
+                    </header>
+                    <ul id="result" class="country-list">
+                        <li><h3></h3></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="watchCount">
+            <h2>10. Function (Watch Counting)</h2>
+            <p>Application เกี่ยวกับการจับเวลา บนหน้า Website โดยใช้ Javascript ในการทำงานทั้งหมด</p>
+            <div class="bg" id="slide1">
+                <div class="main">
+                    <div class="box">
+                        <div class="countTime">00:00:00:000</div>
+                        <div class="buttons-grop">
+                            <button class="start"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;เริ่ม</button>
+                            <button class="pause"><i class="fa-solid fa-pause"></i>&nbsp;&nbsp;หยุด</button>
+                            <button class="reset"><i class="fa-solid fa-rotate-left"></i>&nbsp;&nbsp;รีเซ็ท</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="TempCal">
+            <h2>11. Function (Temperature Calculator)</h2>
+            <p>Application ในการคำนวณหาค่า Temperature สามารถหาได้ทุกหน่วยของอุณหภูมิ ตามที่กรอก แต่ต้องป้อนไปสักค่า</p>
+            <div class="bg appTemp" id="slide1">
+                <h1>แอพแปลงอุณหภูมิ</h1>
+                <div class="bg11-con">
+                    <label for="celcius">องศาเซลเซียส</label>
+                    <input type="text" name="celcius" id="celcius">
+                    <label for="fahrenheit">ฟาเรนไฮน์</label>
+                    <input type="text" name="fahrenheit" id="fahrenheit">
+                    <label for="kevin">เคลวิน</label>
+                    <input type="text" name="kevin" id="kevin">
+                </div>
+            </div>
+        </section>
+        <section class="content" id="bmiCal">
+            <h2>12. Function (BMI Calculator)</h2>
+            <p>Application ในการคำนวณค่า BMI ของร่างกาย โดยผู้ใช้สามารถพิมค่า น้ำหนัก และ ส่วนสูงเข้าไป หลังจากคำนวณจะบอกผลลัพธ์ว่าคุณรูปร่างเป็นอย่างไร โดยมีการดักจับ Error หากผู้ใช้ไม่พิมค่า หรือพิมตัวอักษร App จะไม่สามารถคำนวณค่าออกมาได้ </p>
+            <div class="bg appTemp" id="slide1">
+                <div class="bg12-con">
+                    <h1>BMI Calculator</h1>
+                    <form>
+                        <div class="form-group">
+                            <label for="weight">น้ำหนัก (Kg)</label>
+                            <input type="text" id="weight">
+                        </div>
+                        <div class="form-group">
+                            <label for="height">ส่วนสูง (cm)</label>
+                            <input type="text" id="height">
+                        </div>
+                    </form>
+                    <button class="btn12">คำนวณ BMI</button>
+                    <p class="result12"></p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    
+    <script src="/รวมคำสั่งJS/coupon.js"></script>
+    <script src="/รวมคำสั่งJS/changeMode.js"></script>
+    <script src="/รวมคำสั่งJS/inputChar.js"></script>
+    <script src="/รวมคำสั่งJS/incrementcounter.js"></script>
+    <script src="/รวมคำสั่งJS/popup.js"></script>
+    <script src="/รวมคำสั่งJS/login.js"></script>
+    <script src="/รวมคำสั่งJS/imagePopup.js"></script>
+    <script src="/รวมคำสั่งJS/searchVidjet.js"></script>
+    <script src="/รวมคำสั่งJS/searchFilter.js"></script>
+    <script src="/รวมคำสั่งJS/countingTime.js"></script>
+    <script src="/รวมคำสั่งJS/temperature.js"></script>
+    <script src="/รวมคำสั่งJS/bmiCal.js"></script>
+</body>
+</html>
